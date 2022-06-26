@@ -36,7 +36,10 @@ pip install 'git+https://github.com/saadnaeem-dev/torch-scatter'
 
 ```
 ### Implemented logic : 
+
 ![logicFlowDiagram](./plots/scatter_operation_(min,max).png "logicFlowDiagram")
+
 ### Performance tracking (shaded area represents max and min error bounds within each bin) : 
+
 ![performanceTracking](./plots/binned_min_&_max_count_wrt_discrete_ranges.png "performanceTracking")
 
