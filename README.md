@@ -1,5 +1,7 @@
-### Performance tracking during model training by monitoring relative errors w.r.t bin counts 
-### Eg. For a bin [0-3500] MAE of 30 would not be as problematic as MAE of 30 for bin [0-40]  
+### This scatter(min,max) operations implementation deos not utilize any external libraries and is developed from scratch using numpy for carrying out expensive operations in numpy for performance
+### Performance speedup followed by one time nd.array to tensor conversion to provide expected model input.
+## This function allows real-time performance tracking during model training by monitoring relative errors w.r.t bin counts 
+## Eg. For a bin [0-3500] MAE of 30 would not be as problematic as MAE of 30 for bin [0-40]  
 
 ## Installation
 ```bash
