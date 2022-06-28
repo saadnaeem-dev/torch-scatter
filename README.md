@@ -1,3 +1,4 @@
+### Minimizes/Maximizes all values from the src tensor into output var at the indices specified in the index tensor 
 ### This scatter(min,max) operations implementation deos not utilize any external libraries and is developed from scratch using numpy for carrying out expensive tensor operations in numpy for performance
 ### Performance speedup followed by one time nd.array to tensor conversion to provide expected model input.
 ## This function allows real-time performance tracking during model training by monitoring relative errors w.r.t bin counts 
@@ -7,6 +8,14 @@
 ```bash
 pip install 'git+https://github.com/saadnaeem-dev/torch-scatter'
 ```
+
+## Import
+```bash
+from torch_scatter import scatter
+```
+### both operations i.e. min/max are supported under `scatter`  
+
+
 
 ## Args
 - src: the actual values that are to be minimized or maximized
@@ -43,3 +52,10 @@ pip install 'git+https://github.com/saadnaeem-dev/torch-scatter'
 
 ![performanceTracking](./plots/binned_min_&_max_count_wrt_discrete_ranges.png "performanceTracking")
 
+## Motivation for this implementation:
+
+##### https://github.com/rusty1s/pytorch_scatter library does not support this functionality
+##### Issue: https://github.com/rusty1s/pytorch_scatter/issues/252
+
+![bug-1](./plots/issue%20%23252-1.png "bug-1")
+![bug-2](./plots/issue%20%23252-2.png "bug-2")
